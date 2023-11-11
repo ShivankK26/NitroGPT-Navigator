@@ -1,11 +1,12 @@
 # NitroGPT Navigator: GPT-3.5 Based AI ChatBot
 
-NitroGPT Navigator is an advanced chatbot that leverages cutting-edge technologies, including OpenAI's GPT-3.5, LangChain, and Pinecone Vector Database. It's designed to provide accurate and context-aware answers to any questions related to the content on routerprotocol.com.
+NitroGPT Navigator is an advanced chatbot that leverages cutting-edge technologies, including OpenAI's GPT-3.5, LangChain, LLMs and Pinecone Vector Database. It's designed to provide accurate and context-aware answers to any questions related to the content on routerprotocol.com.
 
 ## Features
 
-- **Powered by GPT-3.5:** RouterBot utilizes the power of OpenAI's latest language model to generate human-like responses.
+- **Powered by GPT-3.5:** NitroGPT Navigator utilizes the power of OpenAI's latest language model to generate human-like responses.
 - **LangChain Integration:** LangChain enhances linguistic capabilities, enabling a more nuanced understanding of user queries.
+- **Vector Embeddings:** Using a Large Language Model from HuggingFace, all-MiniLM-L6-V2, to convert Text to Numeric form for generating Vector Embeddings.
 - **Pinecone Vector Database:** Leveraging Pinecone allows for efficient vector similarity searches, improving the accuracy of information retrieval.
 
 ## How It Works
