@@ -1,4 +1,4 @@
-# NitroGPT Navigator: GPT-3.5 Based AI Co-Pilot
+# NitroGPT Navigator: GPT-3.5 Based AI ChatBot
 
 NitroGPT Navigator is an advanced chatbot that leverages cutting-edge technologies, including OpenAI's GPT-3.5, LangChain, and Pinecone Vector Database. It's designed to provide accurate and context-aware answers to any questions related to the content on routerprotocol.com.
 
