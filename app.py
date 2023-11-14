@@ -107,5 +107,13 @@ if submit:
         relevant_docs = get_similar_docs(index, prompt, word_count)
         st.write(relevant_docs)
 
+        # Displaying Search Results
+        # st.success("Please Find The Searched Results:")
+        # # Displaying Search Results
+        # st.write("Search Results List...")
+        # for document in relevant_docs:
+        #     st.write("** Result :" + str(relevant_docs.index(document) + 1) + "**")
+        #     st.write("** Info :" + document.page_content)
+
     else:
         st.sidebar.error("Ooops!! Please Provide The API Keys...")
