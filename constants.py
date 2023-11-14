@@ -1,3 +1,3 @@
 WEBSITE_URL = "https://routerprotocol.com/"
-PINECONE_ENVIRONMENT = "gcp-starter"
-PINECONE_INDEX = "router-chatbot"
+PINECONE_ENVIRONMENT = process.env.ENVIRONMENT
+PINECONE_INDEX = process.env.INDEX
