@@ -45,26 +45,26 @@ if load_button:
         and st.session_state["Pinecone_API_Key"] != ""
     ):
         # Fetch Data From The Site
-        site_data = get_website_data(constants.WEBSITE_URL)
-        st.write("Data Pulling has been done...")
+        # site_data = get_website_data("./Router.html")
+        # st.write("Data Pulling has been done...")
 
-        # Splitting The Data Into Chunks
-        chunks_data = split_data(site_data)
-        st.write("Spliting Of Data has been done...")
+        # # Splitting The Data Into Chunks
+        # chunks_data = split_data(site_data)
+        # st.write("Spliting Of Data has been done...")
 
-        # Creating Embeddings Instance
-        embeddings = create_embeddings()
-        st.write("Embeddings Instance has been created...")
+        # # Creating Embeddings Instance
+        # embeddings = create_embeddings()
+        # st.write("Embeddings Instance has been created...")
 
-        # Pushing Data To Pinecone
-        push_to_pinecone(
-            st.session_state["Pinecone_API_Key"],
-            constants.PINECONE_ENVIRONMENT,
-            constants.PINECONE_INDEX,
-            embeddings,
-            chunks_data,
-        )
-        st.write("Pushing of Data To Pinecone has been done...")
+        # # Pushing Data To Pinecone
+        # push_to_pinecone(
+        #     st.session_state["Pinecone_API_Key"],
+        #     constants.PINECONE_ENVIRONMENT,
+        #     constants.PINECONE_INDEX,
+        #     embeddings,
+        #     chunks_data,
+        # )
+        # st.write("Pushing of Data To Pinecone has been done...")
 
         st.sidebar.success("Data Pushed To Pinecone Successfully!")
 
@@ -108,9 +108,8 @@ if submit:
         st.write(relevant_docs)
 
         # Displaying Search Results
-        # st.success("Please Find The Searched Results:")
-        # # Displaying Search Results
-        # st.write("Search Results List...")
+        st.success("Please Find The Searched Results:")
+        # Displaying Search Results
         # for document in relevant_docs:
         #     st.write("** Result :" + str(relevant_docs.index(document) + 1) + "**")
         #     st.write("** Info :" + document.page_content)
