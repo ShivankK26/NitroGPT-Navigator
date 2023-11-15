@@ -2,28 +2,14 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Pinecone
 from langchain.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 import pinecone
-
-# import asyncio
 from langchain.document_loaders import WebBaseLoader
-
-# from langchain.document_loaders.sitemap import SitemapLoader
 
 
 # Function to fetch the data from the website
+def get_website_data(website):
+    from langchain.document_loaders import UnstructuredHTMLLoader
 
-# Documentation Resource- https://python.langchain.com/docs/integrations/document_loaders/sitemap
-
-# def get_website_data(sitemap_url):
-#     loop = asyncio.new_event_loop()
-#     asyncio.set_event_loop(loop)
-#     loader = SitemapLoader(sitemap_url)
-
-#     docs = loader.load()
-#     return docs
-
-
-def get_website_data(website_url):
-    loader = WebBaseLoader(website_url)
+    loader = UnstructuredHTMLLoader(website)
     data = loader.load()
     return data
 
@@ -70,3 +56,6 @@ def pull_from_pinecone(
 def get_similar_docs(index, query, k=2):
     similar_docs = index.similarity_search(query, k=k)
     return similar_docs
+
+
+get_website_data("./Router.html")
