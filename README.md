@@ -24,7 +24,7 @@ To run NitroGPT Navigator locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/routerbot.git
+   git clone https://github.com/ShivankK26/routerbot.git
    cd NitroGPT Navigator
    ```
 
